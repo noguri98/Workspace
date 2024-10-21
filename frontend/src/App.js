@@ -2,7 +2,7 @@
 // npm install react-router-dom
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
-import MAIN from './MAIN/MAIN';
+import Main from './Main/Main';
 
 const App = () => {
 
@@ -20,7 +20,7 @@ const App = () => {
                     - replace : 현재 경로를 목적지 경로로 대체. 즉 어떤 방법으로도 "/"로 갈 수 없도록 설정
                 */}
                 <Route path="/" element={<Navigate to="/main" replace />} />
-                <Route path="/main" element={<MAIN />} />
+                <Route path="/main" element={<Main />} />
              </Routes>
         </Router>
     )

@@ -38,12 +38,40 @@
   border-radius: 20px;
 }
 
-.MAIN .ICON {
+.MAIN .USER {
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 2vh;
 
   width: 95vw;
   height: 30vh;
 
+  padding: 10px;
+
   background-color: rgba(146, 128, 128, 0.095);
+}
+
+.USER .HEAD {
+
+  display: flex;
+
+  justify-content: space-between; /* 이 줄을 추가합니다 */
+  align-self: center;
+
+  width: 90vw;
+  height: 5vh;
+  
+  /* border: 0.5px solid gray; */
+}
+
+.HEAD .NAME {
+
+  font-size: 2.5vh;
+  font-weight: normal;
+
+  align-self: center;
 }
 
 /* 프로젝트 단위로 List가 구설될 예정 */
@@ -67,13 +95,12 @@
 
   display: flex;
 
-  justify-self: center;
+  justify-content: space-between; /* 이 줄을 추가합니다 */
   align-self: center;
 
-  padding: 10px;
-
-  width : 90vw;
-  height: 7vh;
+  width: 90vw;
+  height: 5vh;
+  
   /* border: 0.5px solid gray; */
 }
 
@@ -85,23 +112,22 @@
   align-self: center;
 }
 
+.USER .HEAD .ADD,
 .LIST .HEAD .ADD {
 
   width: 5vw;
-  height: 5vh;
-
-  margin-left: 73vw;
+  height: 4.5vh;
 
   align-self: center;
 
   border: none;
-  
   background-color: lightgray;
 
   font-size: 2vh;
   font-weight: bold;
 }
 
+.USER .HEAD .ADD:hover,
 .LIST .HEAD .ADD:hover {
 
   background-color: rgba(146, 128, 128, 0.095);
@@ -119,7 +145,5 @@
 
   padding: 10px;
 
-  border: 0.5px solid gray;
+  /* border: 0.5px solid gray; */
 }
-
-
