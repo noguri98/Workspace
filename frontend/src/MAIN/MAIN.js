@@ -11,11 +11,11 @@ import './Main.css';
 
 const Main = () => {
 
-    const [ addWorkspace , setAddWorkspace ] = useState(false);
+    const [ WorkspaceOption , setWorkspaceOption ] = useState(false);
 
-    function AddWorkspaceClick() {
+    function AddWorkspace() {
 
-        setAddWorkspace(true);
+        setWorkspaceOption(!WorkspaceOption);
     } 
 
     return (
@@ -33,10 +33,23 @@ const Main = () => {
                     <div className="LIST">
                         <div className="HEAD">
                             <code className="TITLE"> WorkSpace </code>
-                            <button className="ADD" onClick={AddWorkspaceClick}> + </button>
+                            {WorkspaceOption ? <button className="ADD" onClick={AddWorkspace}> 완료 </button> : <button className="ADD" onClick={AddWorkspace}> 추가 </button>}
                         </div>
-                        <div className="BODY">
-                        </div>
+                        {WorkspaceOption ? 
+                            <div className='OPTION'>
+                                <div className='HEAD'>
+                                    <code className='TITLE'> 작업공간에 PROJECT를 추가하세요. </code>
+                                </div>
+                                {/* <div className='BOX1'> </div> */}
+                                <input className='BOX1' type='text' placeholder='PROJECT 이름을 입력하세요.' />
+                                {/* <div className='BOX2'> </div> */}
+                                <input className='BOX2' type='text' placeholder='PROJECT의 경로를 설정하세요.' />
+                                {/* <div className='BOX3'> </div> */}
+                                <input className='BOX3' type='text' placeholder='추후 업데이트 예정.' />
+                            </div> 
+                            : 
+                            <div className="BODY"> </div>
+                        }
                     </div>
                 </div>
             </div>

@@ -145,5 +145,97 @@
 
   padding: 10px;
 
-  /* border: 0.5px solid gray; */
+  transition: all 0.3s ease-in-out;
+}
+
+.LIST .OPTION {
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-self: center;
+
+  gap: 2vh;
+
+  width: 90vw;
+  height: 30vh;
+
+  padding: 10px;
+
+  background-color: lightgray;
+
+  transition: all 0.4s ease-in-out;
+}
+
+.LIST .OPTION .HEAD {
+
+  width: 80vw;
+  height: 5vh;
+
+  justify-self: start;
+  align-self: start;
+
+  padding: 10px;
+
+  border: none;
+  /* background-color: white; */
+
+  transition: all 0.4s ease-in-out;
+}
+
+.LIST .OPTION .TITLE {
+
+  font-size: 2vh;
+  font-weight: normal;
+
+  align-self: center;
+}
+
+.LIST .OPTION .BOX1 {
+  
+  width: 80vw;
+  height: 5vh;
+
+  justify-self: start;
+  align-self: start;
+
+  padding: 10px;
+
+  border: none;
+  background-color: white;
+
+  transition: all 0.4s ease-in-out;
+}
+
+.LIST .OPTION .BOX2 {
+
+  width: 80vw;
+  height: 5vh;
+
+  justify-self: start;
+  align-self: start;
+
+  padding: 10px;
+
+  border: none;
+  background-color: white;
+
+  transition: all 0.4s ease-in-out;
+}
+
+.LIST .OPTION .BOX3 {
+
+  width: 80vw;
+  height: 5vh;
+
+  justify-self: start;
+  align-self: start;
+
+  padding: 10px;
+
+  border: none;
+  background-color: white;
+
+  transition: all 0.4s ease-in-out;
 }
