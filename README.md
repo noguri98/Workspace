@@ -26,3 +26,9 @@ $ npm install react-router-dom 을 이용하여 App.js를 로드할 때 기본�
 
 > Commit : Route MAIN
 
+### 2024-10-21 (월)
+
+오늘은 MAIN 컴포넌트의 디자인의 기본 골격을 잡고 button 클릭 이벤트를 추가하겠다.
+
+> Commit : MAIN Design
+
